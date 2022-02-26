@@ -9,10 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pizza Parlor</h1>
+      <div class="jumbotron">
+        <h1>Pizza Parlor</h1>
+        <img src="img/pizza.jpg">
+      </div>
       <form id="pizzaOrder">
         <div class="form-group">
-          <label for="size">Select a size.</label>
+          <label for="size">Select a size</label>
           <select class="form-control" id="size">
             <option value="small">Small, 10"</option>
             <option value="medium">Medium, 12"</option>
@@ -35,19 +38,19 @@
             <input type="checkbox" name="topping" value="onions"> Onions</label>
           </label>
         </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="topping" value="mushroom"> Mushroom</label>
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="topping" value="freshBasil"> Fresh basil</label>
+          </label>
+        </div>
         <button type="button" class="btn" id="orderBtn">Place Order</button>
+        <div class="userOutput" type="text">Your pizza will cost: <p class="currency"id="result"></p>
       </form>
-      <div class="userOutput" type="text">your pizza eill cost: <p id="result"></p>
-      </div>
     </div>
-    </body>
-
-
-
-
-
-
-
-
-
+  </body>
 <html>
