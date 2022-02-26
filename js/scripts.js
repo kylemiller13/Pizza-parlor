@@ -3,7 +3,6 @@ function Pizza(toppings, size){
   this.toppings = toppings;
   this.size = size;
 }
-
 Pizza.prototype.price = function(){
   let price = 14;
   for (let i = 0; i < this.toppings.length; i++) {
@@ -17,10 +16,6 @@ Pizza.prototype.price = function(){
   }
   return price;
 };
-
-
-
-
 //UI Logic
 $(document).ready(function() {
   $(".userOutput").hide();
