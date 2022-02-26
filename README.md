@@ -2,7 +2,7 @@
 
 #### By Kyle Miller
 
-#### This is a website where you can choose your toppings and see how much your pizza will cost. 
+#### This is a website where you can choose your toppings and size to see how much your pizza will cost. 
 
 ## _[GitHub Pages]_
 
@@ -24,7 +24,7 @@ _A website where a user can choose one or more individual toppings (pepperoni, s
 - _Access your computer's terminal shell(Git Bash for Windows or Mac for terminal)_
 - _In terminal:_
 - `Go to the current directory where you want the cloned directory to be added.`
-- `Clone the repository by using the command $ git clone `
+- `Clone the repository by using the command $ git clone https://github.com/kylemiller13/Pizza-parlor`
 - `Lastly, open index.html`
 
 ## Known Bugs
@@ -39,33 +39,19 @@ _A website where a user can choose one or more individual toppings (pepperoni, s
 ## Tests:
 
 ### Describe: Pizza()
- - Test: "It will return an array of numbers from 0 to the user's inputted number."
+ - Test: "Created a constructor Pizza that takes in two arguments(toppings & size)."
  - Code: 
- rogers(3);
- - Expected Output: [0, 1, 2, 3]
+ Pizza(toppings,size);
+ - Expected Output: NA
  ---
- - Test: "It will recognize any number that contains a number 3 and change the digit into a a string 'Won't you be my neighbor?.'"
- - Code: rogers(3)
- rogers(3);
- - Expected Output: [0, 1, 2, "Won't you be my neighbor?"]
+ ### Describe: Pizza.prototype.price()
+ - Test: "Created a prototype named price which is a function that iterates through the toppings list and returns the calcuated price plus a dollar to what toppings is selected on the users page."
+ - Code: 
+ Pizza("Fresh basil");
+ - Expected Output: "Your pizza will cost is $15.00." 
  ---
- - Test: "It will recognize any number that contains a number 2 and change the digit into a a string 'Bloop!'unless it contains a 3."
- - Code: rogers(3)
- rogers(3);
- - Expected Output: [0, 1, "Bloop!", "Won't you be my neighbor?"]
----
-- Test: "It will recognize any number that contains a number 2 and change the digit into a a string 'Bloop!'unless it contains a 3."
- - Code: rogers(3)
- rogers(3);
- - Expected Output: [0, 1, "Bloop!", "Won't you be my neighbor?"]
----
-- Test: "It will recognize any number that contains a number 1 and change the digit into a string 'Beep!'unless it contains a 3 or 2."
- - Code: rogers(3)
- rogers(3);
- - Expected Output: [0, Beep!, "Bloop!", "Won't you be my neighbor?"]
----
-- Test: "It will return the newArray with the digits not assigned to anything and add the strings in place of the digits."
- - Code: rogers(3)
- rogers(3);
- - Expected Output: [0, Beep!, "Bloop!", "Won't you be my neighbor?"]
+ - Test: "It will recognize a size that a user has selected and return the calcuated price plus $3.00 to each selected size."
+ - Code: 
+ Pizza("medium");
+ - Expected Output: "Your pizza will be $17.00." 
 ---
