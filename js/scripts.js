@@ -4,15 +4,12 @@ function Pizza(toppings, size){
   this.size = size;
  
 }
-// let newPizza = new Pizza();
 
 Pizza.prototype.price = function(){
   let price = 14;
-  for (let i = 0; i < this.toppings.length; i++){
-    if (this.toppings[i] === "pepperroni" || "sausage" || "onions"){
+  for (let i = 0; i < this.toppings.length; i++) {
       price += 1;
     }
-  }
   if (this.size === "medium"){
     price += 3;
   }
@@ -20,14 +17,18 @@ Pizza.prototype.price = function(){
     price += 3;
   }
   return price;
-}
+};
+
+
+
 
 //UI Logic
 $(document).ready(function() {
-  $("#pizzaOrder").submit(function(event){
-    let size = $('#size option:selected').text();
-    let toppings = $('input[name=topping]:checked').val();
-
+  $(".userOutput").hide();
+  $("#orderBtn").click(function(event){
+    let pizza = new Pizza($("input[name=topping]:checked"),$("#size option:selected").val()); 
+   $("#result").text(pizza.price());
+   $(".userOutput").show();
     event.preventDefault();
   });
 });
