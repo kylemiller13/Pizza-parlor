@@ -12,7 +12,7 @@ Pizza.prototype.price = function(){
     price += 3;
   }
   if (this.size === "large"){
-    price += 3;
+    price += 6;
   }
   return price;
 };
