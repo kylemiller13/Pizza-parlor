@@ -21,8 +21,8 @@ $(document).ready(function() {
   $(".userOutput").hide();
   $("#orderBtn").click(function(event){
     let pizza = new Pizza($("input[name=topping]:checked"),$("#size option:selected").val()); 
-   $("#result").text(pizza.price());
-   $(".userOutput").show();
+  $("#result").text(pizza.price());
+  $(".userOutput").show();
     event.preventDefault();
   });
 });
