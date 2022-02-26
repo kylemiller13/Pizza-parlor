@@ -1,0 +1,39 @@
+body{
+  font-size: 16px;
+  background-image: url("../../img/background.jpg");
+}
+.currency:before { content: '$'}
+.currency:after{content: '.00'}
+
+.container{
+  text-align: center;
+}
+img {
+  border-radius: 20%;
+  height: auto;
+  width: 80px;
+  float: left;
+  position: relative; 
+  top: -80px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #FF7471;
+}
+
+form {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.checkbox{
+  text-align: center;
+}
+
+.jumbotron{
+  text-align: center;
+  background-color: #FF7471;
+  color: white;
+}
