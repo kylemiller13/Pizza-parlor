@@ -41,17 +41,17 @@ _A website where a user can choose one or more individual toppings (pepperoni, s
 ### Describe: Pizza()
  - Test: "Created a constructor Pizza that takes in two arguments(toppings & size)."
  - Code: 
- Pizza(toppings,size);
+ function Pizza(toppings,size);
  - Expected Output: NA
  ---
  ### Describe: Pizza.prototype.price()
  - Test: "Created a prototype named price which is a function that iterates through the toppings list and returns the calcuated price plus a dollar to what toppings is selected on the users page."
  - Code: 
- Pizza("Fresh basil");
+ let pizza = new Pizza("Fresh basil");
  - Expected Output: "Your pizza will cost is $15.00." 
  ---
  - Test: "It will recognize a size that a user has selected and return the calcuated price plus $3.00 to each selected size."
  - Code: 
- Pizza("medium");
+ let pizza = new Pizza("medium");
  - Expected Output: "Your pizza will be $17.00." 
 ---
