@@ -20,9 +20,14 @@ Pizza.prototype.price = function(){
 $(document).ready(function() {
   $(".userOutput").hide();
   $("#orderBtn").click(function(event){
+    let toppingsArray = [];
+    $("input[name=topping]:checked").each(function() {
+    toppingsArray.push(this.value);
+  });
     let pizza = new Pizza($("input[name=topping]:checked"),$("#size option:selected").val()); 
   $("#result").text(pizza.price());
   $(".userOutput").show();
     event.preventDefault();
+
   });
 });
