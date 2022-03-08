@@ -4,8 +4,6 @@
 
 #### This is a website where you can choose your toppings and size to see how much your pizza will cost. 
 
-## _[GitHub Pages]_
-
 ## Technologies Used
 
 - HTML
